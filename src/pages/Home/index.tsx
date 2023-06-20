@@ -1,5 +1,5 @@
 import React from 'react';
-import {FiSearch} from 'react-icons/fi';
+import {FiLogIn, FiSearch} from 'react-icons/fi';
 import {Link} from 'react-router-dom';
 
 import './styles.css';
@@ -12,10 +12,10 @@ const Home = () => {
       <div className="content">
         <header>
           <img src={logo} alt="Ecoponto"/>
-          {/* <Link to="/create-point">
+          <Link to="/create-point">
             <span> <FiLogIn /></span>
             <strong>Cadastrar Novo Ponto</strong>
-          </Link> */}
+          </Link>
 
         </header>
 
