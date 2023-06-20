@@ -1,5 +1,5 @@
 import React from 'react';
-import {FiLogIn, FiSearch} from 'react-icons/fi';
+import {FiSearch} from 'react-icons/fi';
 import {Link} from 'react-router-dom';
 
 import './styles.css';

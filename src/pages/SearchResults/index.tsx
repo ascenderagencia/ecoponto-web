@@ -39,20 +39,20 @@ const SearchResults = () => {
   const [items, setItems] = useState<Item[]>([]);
   const [ufs, setUfs] = useState<string[]>([]);
   const [cities, setCities] = useState<string[]>([]);
-  const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
+  // const [initialPosition, setInitialPosition] = useState<[number, number]>([0, 0]);
 
   const [selectedUf, setSelectedUf] = useState('0');
   const [selectedCity, setSelectedCity] = useState('0');
   const [selectedItems, setSelectedItems] = useState<number[]>([]);
 
-  useEffect(() => {
-    navigator.geolocation.getCurrentPosition(position => {
+  // useEffect(() => {
+  //   navigator.geolocation.getCurrentPosition(position => {
 
-      const { latitude, longitude } = position.coords;
+  //     const { latitude, longitude } = position.coords;
 
-      setInitialPosition([latitude, longitude]);
-    })
-  }, []);
+  //     // setInitialPosition([latitude, longitude]);
+  //   })
+  // }, []);
 
   useEffect(() => {
     api.get('items').then(res => {
